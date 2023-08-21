@@ -1,0 +1,166 @@
+*{
+	margin:0px;
+	padding:0px;
+	color: #32e6c0;
+}
+body{
+	font:12px/1.5 "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+a{
+	text-decoration:none;
+	color: #32e6c0;
+}
+a:hover{
+	color:#ff66c4;		        
+}
+
+/*header*/
+.header,.footer{
+	width:100%;
+	padding:23px;
+	background-color: black;
+}
+.headerContainer,.footerContainer{
+	width:1200px;
+	margin:0 auto; 
+}
+.headerContainer a.advice{
+	padding:13px;
+	float:right;
+}
+.headerContainer a.advice img,.loginbox img{
+	vertical-align:text-bottom;
+}
+.xtx-login-main {
+	height: 488px;
+	/* background: url(./images/a/login-bg.png) no-repeat center/cover; */
+}
+.xtx-login-main .wrapper {
+	width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.xtx-login-main .wrapper .box {
+	width: 380px;
+	box-shadow: 0px 0px 25px 0px rgba(3, 3, 3, 0.14);
+	position: absolute;
+	top: 60px;
+	right: 100px;
+	padding: 20px 40px;
+	float: left;
+}
+.xtx-login-main .wrapper .box .tab-nav {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.xtx-login-main .wrapper .box .tab-nav::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 8px;
+	width: 1px;
+	height: 20px;
+}
+.xtx-login-main .wrapper .box .tab-nav a {
+	color: white;
+	font-size: 24px;
+	height: 35px;
+	line-height: 35px;
+}
+.xtx-login-main .wrapper .box .tab-nav a.active {
+	color: #ff66c4;
+	border-bottom: 2px solid #ff66c4;
+}
+.xtx-login-main .wrapper .box .tab-pane .code {
+	display: block;
+	margin: 44px auto;
+}
+.xtx-login-main .wrapper .box .tab-pane .link {
+	text-align: right;
+	padding-top: 12px;
+}
+.xtx-login-main .wrapper .box .tab-pane .link a {
+	color: #ff66c4;
+}
+.xtx-login-main .wrapper .box .tab-pane .input {
+	border: 1px solid #ff66c4;
+	width: 100%;
+	height: 36px;
+	margin-top: 17px;
+	display: flex;
+	background-color: #32e6c0;
+}
+.xtx-login-main .wrapper .box .tab-pane .input .iconfont {
+	color: #32e6c0;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 20px;
+}
+.xtx-login-main .wrapper .box .tab-pane .input input {
+	flex: 1;
+	padding-left: 15px;
+	background-color: black;
+}
+.xtx-login-main .wrapper .box .tab-pane .input input::placeholder {
+	color: #32e6c0 !important;
+}
+.xtx-login-main .wrapper .box .tab-pane .agree {
+	color: white;
+	padding: 17px 0;
+}
+.xtx-login-main .wrapper .box .tab-pane .agree > label input:checked + span {
+	color: #ff66c4;
+}
+.xtx-login-main .wrapper .box .tab-pane .button {
+	margin-bottom: 15px;
+}
+.xtx-login-main .wrapper .box .tab-pane .button .dl {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #ff66c4;
+	color: #32e6c0;
+	display: block;
+	font-size: 22px;
+	margin-bottom: 17px;
+}
+
+/*footer*/
+ul.explain{
+	padding: 10px 0px 30px 200px;
+}
+ul.explain li{
+	padding:0 3px;
+	list-style:none;
+	float:left;
+}
+ul.explain li.copy{
+	padding-left: 23px;
+}
+ul.admit{
+	padding: 10px 0px 30px 200px;
+	padding-bottom:20px;
+}
+ul.admit li{
+	border-right:1px solid #32e6c0;
+	list-style:none;
+	float:left;
+}
+ul.admit li.admit1{
+	padding-right:10px;
+}
+ul.admit li.admit2{
+	padding: 0 10px 0 10px;
+}
+ul.explain li.copy,ul.admit li{
+	color:#32e6c0;
+}
+.footer img{
+	margin-bottom:20px;
+}

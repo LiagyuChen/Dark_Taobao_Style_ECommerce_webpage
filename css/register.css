@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+a{
+	text-decoration:none;
+	color: #32e6c0;
+}
+a:hover{
+	color:#ff66c4;		        
+}
+input:hover{
+  color:white;
+  background-color: black;
+}
+.xtx-wrapper {
+  line-height: 1.4;
+}
+.xtx-wrapper .container {
+  width: 1240px;
+  margin: 0 auto;
+}
+.xtx-card {
+  width: 100%;
+  height: 550px;
+  color: #32e6c0;
+}
+.xtx-card h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #32e6c0;
+  padding-left: 120px;
+}
+.xtx-form {
+  padding-left: 460px;
+}
+.xtx-form .xtx-form-item input {
+  background-color: black;
+  color: white;
+}
+.xtx-form .xtx-form-item {
+  position: relative;
+  padding-bottom: 24px;
+}
+.xtx-form .xtx-form-item .msg {
+  color: #ff66c4;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+}
+.xtx-form .xtx-form-item.pl50 {
+  padding-left: 40px;
+  cursor: pointer;
+}
+.xtx-form .xtx-form-item span.iconfont {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  color: white;
+  font-size: 18px;
+}
+.xtx-form .xtx-form-item i {
+  color: #32e6c0;
+  font-size: 14px;
+}
+.xtx-form .xtx-form-item input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #32e6c0;
+  padding-left: 40px;
+}
+.xtx-form .xtx-form-item.error input {
+  border-color: #ff66c4;
+}
+.xtx-form .xtx-form-item input::placeholder {
+  color: white !important;
+}
+.xtx-form .xtx-form-item .submit {
+  width: 350px;
+  height: 50px;
+  background: #ff66c4;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.xtx-form .xtx-form-item .code {
+  position: absolute;
+  left: 190px;
+  top: 16px;
+  width: 120px;
+  color: #32e6c0;
+  text-align: right;
+}
+.xtx-form .xtx-form-item .code.ing {
+  color: #cccccc;
+}
+.xtx-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 720px;
+  height: 96px;
+  margin: 0 auto;
+}
+.xtx-steps .item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+.xtx-steps .item .text {
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 63px;
+  color: #999;
+}
+.xtx-steps .item .step {
+  border: 2px solid #32e6c0;
+  color: #ccc;
+  border-radius: 50%;
+  line-height: 46px;
+  text-align: center;
+  font-size: 28px;
+  z-index: 999;
+  display: block;
+  position: relative;
+}
+.xtx-steps .item::after, .xtx-steps .item::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  height: 2px;
+  width: 120px;
+}
+.xtx-steps .item::after {
+  transform: translateX(-100%);
+}
+.xtx-steps .item:first-child::after {
+  display: none;
+}
+.xtx-steps .item:last-child::before {
+  display: none;
+}
+.xtx-steps .item.active .text {
+  color: #32e6c0;
+}
+.xtx-steps .item.active .step {
+  background: #32e6c0;
+  color: #fff;
+  border-color: #ff66c4;
+}
+.xtx-steps .item.active::after, .xtx-steps .item.active::before {
+  content: "";
+  background: #32e6c0;
+}
+.xtx-form-label {
+  padding-left: 360px;
+  margin-top: 80px;
+}
+.xtx-form-label .xtx-form-item {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+}
+.xtx-form-label .xtx-form-item label {
+  width: 100px;
+  padding-right: 15px;
+  text-align: right;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  color: #32e6c0;
+}
+.xtx-form-label .xtx-form-item input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #32e6c0;
+  padding-left: 10px;
+}
+.xtx-form-label .xtx-form-item input::placeholder {
+  color: #cccccc !important;
+}
+.xtx-form-label .xtx-form-item input:read-only {
+  color: #32e6c0;
+}
+.xtx-form-label .xtx-form-item .submit {
+  width: 300px;
+  height: 50px;
+  background: #32e6c0;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+.xtx-form-label .xtx-form-item .captcha {
+  line-height: 50px;
+  height: 50px;
+}
+.xtx-form-label .xtx-form-item .captcha img {
+  width: 134px;
+  height: 50px;
+}
+.xtx-form-label .xtx-form-item .captcha a {
+  color: #32e6c0;
+}
+.xtx-form-label .xtx-form-item .code {
+  position: absolute;
+  left: 310px;
+  top: 16px;
+  color: #32e6c0;
+}
+.xtx-form-label .xtx-form-item .code.ing {
+  color: #cccccc;
+}
+.xtx-success-box {
+  padding-top: 250px;
+  text-align: center;
+  color: #32e6c0;
+}
+.xtx-success-box .iconfont {
+  font-size: 80px;
+  color: #32e6c0;
+}
+.xtx-success-box .tit {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.xtx-success-box .desc {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.xtx-success-box .btn {
+  width: 300px;
+  height: 50px;
+  background: #32e6c0;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
+/*footer*/
+ul.explain{
+	padding: 10px 0px 30px 250px;
+}
+ul.explain li{
+	padding:0 3px;
+	list-style:none;
+	float:left;
+}
+ul.explain li.copy{
+	padding-left: 23px;
+}
+ul.admit{
+  padding: 10px 0px 30px 250px;
+	padding-bottom:20px;
+}
+ul.admit li{
+	list-style:none;
+	float:left;
+}
+ul.admit li.admit1{
+	padding-right:10px;
+}
+ul.admit li.admit2{
+	padding: 0 10px 0 0px;
+}
+ul.explain li.copy,ul.admit li{
+	color:#32e6c0;
+}
+.footer img{
+	margin-bottom:20px;
+}

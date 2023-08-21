@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="keywo rds" content="淘宝" />
+	<meta name="description" content="淘宝是一个大型的购物网站" />
+	<link rel="shortcut icon" type="image/x-icon" href="./images/myicon.png" />
+	<title>淘优购--登录</title>
+	<link type="text/css" rel="stylesheet" href="./css/login.css" />
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+  	<link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css">
+	 <style type="text/css">
+	 	.userbox .delete{
+	 		width: 16px;
+	 		height: 16px;
+			border-radius: 10px;
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+			font-size: 9.5px;
+			font-weight: bold;
+			left: 276px;
+	 	}
+	 </style>
+  </head>
+
+  <body> 
+		<script>
+		  	$(document).ready(function(){
+				$("#username").focus();
+			})
+		</script>
+		
+      	<div class="taobaoBox">
+	        <!--header-->
+	        <div class="header">
+			   <div class="headerContainer">
+			     <a href="#"><img src="./images/mylogo.png" /></a>
+			   </div>
+			</div>  
+			<!-- 登录内容 -->
+			<div class="xtx-login-main" style="background: url(./images/a/login-bg.png) no-repeat center/cover;">
+				<div class="wrapper">
+				<form action="">
+					<div class="box">
+					<div class="tab-nav">
+						<a href="javascript:;" class="active">账户登录</a>
+					</div>
+					<div class="tab-pane">
+						<div class="link">
+							<a href="javascript:;">手机验证码登录</a>
+						</div>
+						<div class="input">
+							<span class="iconfont icon-zhanghao"></span>
+							<input required type="text" placeholder="请输入用户名称/手机号码" name="username">
+						</div>
+						<div class="input">
+							<span class="iconfont icon-suo"></span>
+							<input required type="password" placeholder="请输入密码" name="password">
+						</div>
+						<div class="agree">
+							<label for="my-checkbox">
+								<input type="checkbox" value="1" id="my-checkbox" class="remember" name="agree">
+								<span class="iconfont icon-xuanze"></span>
+							</label>
+							我已同意 <a href="javascript:;">《服务条款》</a href="javascript:;"> 和 <a>《服务条款》</a>
+						</div>
+						<div class="button clearfix">
+							<button type="submit" class="dl">登 录</button>
+							<a class="fl" href="./forget.html">忘记密码？</a>
+							<a class="fr" href="./register.html">免费注册</a>
+						</div>
+					</div>
+					</div>
+				</form>
+				</div>
+			</div>
+			
+			<script>
+				// 登录按钮
+				let dl = document.querySelector('.dl')
+				let remember = document.querySelector('.remember')
+				let username = document.querySelector('[name=username]')
+				let password = document.querySelector('[name=password]')
+				dl.addEventListener('click', function (e) {
+					e.preventDefault()
+					if (!remember.checked) {
+						alert('请勾选协议')
+						return
+					}
+					let obj = {
+						username: username.value,
+						password: password.value,
+					}
+					localStorage.setItem('pink', JSON.stringify(obj))
+					location.href = './mainpage.html'
+				})
+				// 打开页面时候，如果本地存储有数据， 则自动记录显示用户名和密码，并勾选复选框
+				let obj = JSON.parse(localStorage.getItem('pink'))
+				if (obj) {
+					username.value = obj.username
+					password.value = obj.password
+					// 如果有数据则默认勾选
+					remember.checked = true
+				}
+			</script>
+
+            <!--footer-->
+			<div class="footer">
+				<div class="footerContainer">
+					 <ul class="explain">
+					     <li><a href="#">关于淘优购</a></li>
+						 <li><a href="#">合作伙伴</a></li>
+						 <li><a href="#">营销中心</a></li>
+						 <li><a href="#">廉正举报</a></li>
+						 <li><a href="#">联系客服</a></li>
+						 <li><a href="#">开放平台</a></li>
+						 <li><a href="#">诚征英才</a></li>
+						 <li><a href="#">联系我们</a></li>
+						 <li><a href="#">网站地图</a></li>
+						 <li><a href="#">法律声明</a></li>
+						 <li class="copy">&copy;&nbsp;2022-2025 hash.com 版权所有</li>
+					 </ul>
+					 <ul class="admit">
+					     <li class="admit1">&nbsp;网络文化经营许可证：<a href="#">半岛网文[2023]0268-027号</a></li>
+						 <li class="admit2">增值电信业务经营许可证：辽B1-16080240-1</li>
+						 <li class="admit2">信息网络传播视听节目许可证：1098364号</li>
+					 </ul>
+				</div>
+			</div>
+	  </div>
+
+  </body>
+</html>
